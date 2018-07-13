@@ -1,0 +1,269 @@
+﻿@font-face {
+    
+  font-family: 'advent_proregular';
+    
+  src: url('fonts/adventpro-regular-webfont.eot');
+    
+  src: url('fonts/adventpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         
+  url('fonts/adventpro-regular-webfont.woff2') format('woff2'),
+         
+  url('fonts/adventpro-regular-webfont.woff') format('woff'),
+         
+  url('fonts/adventpro-regular-webfont.ttf') format('truetype'),
+         
+  url('fonts/adventpro-regular-webfont.svg#advent_proregular') format('svg');
+    
+  font-weight: normal;
+    
+  font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'bellefairregular';
+    src: url('fonts/bellefair-regular-webfont.woff2') format('woff2'),
+         url('fonts/bellefair-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    
+font-family: 'billabongregular';
+    
+src: url('fonts/billabong-webfont.woff2') format('woff2'),
+	 url('fonts/billabong-webfont.woff') format('woff');
+    
+font-weight: normal;
+    
+font-style: normal;
+
+
+}
+    
+html{
+	font-size: 10px;
+	box-sizing: border-box;
+}
+	
+h1{
+    padding: 3rem 0 3rem 0;
+    color: royalblue;
+    border: .3rem solid crimson;
+    text-shadow: .2rem .2rem .2rem black;
+    font-family: 'advent_proregular'; 
+    font-size: 4.8rem;
+    background: linear-gradient(to right, darkgray, white);
+    box-shadow: .3rem .3rem .3rem .3rem crimson;
+    border-radius: 1rem / 2rem;
+    position: fixed;
+	top: 0;
+	width: 99%;
+	margin: 0 auto;
+    letter-spacing: 1.1rem;
+    text-align: center;
+	font-style: italic;
+}
+
+div.social{
+	padding-left: 5rem;
+	padding-top: 20rem;
+}
+
+a.facebook{
+	padding: 1.25rem 2rem 1.25rem 2rem;
+	font-size: 3rem;
+	width: 5rem;
+	text-align: center;
+	text-decoration: none;
+	background: #3B5998;
+	color: white;
+	border-radius: 50%;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bold;
+}
+
+a.facebook:hover{
+	opacity: 0.7;
+}
+
+a.twitter{
+	padding: 1.25rem 2rem 1.25rem 2rem;
+	text-align: center;
+	text-decoration: none;
+	background: #00aced;
+	color: white;
+	font-weight: bold;
+	border-radius: 50%;
+	font-size: 3rem;
+	font-family: Helvetica;
+}
+
+a.twitter:hover{
+	opacity: 0.7;
+}
+
+a.instagram{
+	padding: 2.5rem 1.25rem .4rem 1.25rem;
+	text-align: center;
+	text-decoration: none;
+	font-size: 2rem;
+	background: #FF69B4;
+	color: white;
+	border-radius: 50%;
+	font-family: 'billabongregular', Serif;
+}
+
+a.instagram:hover{
+	opacity: 0.7;
+}
+	
+a.linkedin{
+	padding: 1.75rem 1.4rem 1.25rem 1.4rem;
+	font-size: 2.5rem;
+	text-align: center;
+	text-decoration: none;
+	background: #0077B5;
+	color: white;
+	font-weight: bold;
+	border-radius: 50%;
+	font-family: 'Myriad_Pro', sans-serif;
+}
+
+a.linkedin:hover{
+	opacity: 0.7;
+}
+
+div.topnav{
+	background: linear-gradient(darkgray, white);
+	border: .2rem solid crimson;
+	border-radius: 1rem / 2rem;
+	width: 100%;
+	text-align: center;
+	line-height: 200%;
+}
+
+div.topnav:visited{
+	color: royalblue;
+	text-decoration: none;
+}
+
+a.topnav{
+	text-decoration: none;
+	color: royalblue;
+	letter-spacing: .3rem;
+	font-size: 2rem;
+	line-height: 210%;
+	border-right: .2rem solid crimson;
+	padding: 1rem 2rem 1rem 2rem;
+	font-family: 'advent_proregular';
+}
+
+a.topnav:hover{
+	color: crimson;
+}
+
+a.topnav:active{
+	color: darkgray;
+}
+
+#rightside{
+	border-right: hidden;
+}
+
+@media screen and (max-width: 54.5rem){
+	div.topnav{
+		visibility: hidden;
+	}
+}
+		
+#home-icon{
+	width: 3rem;
+	height: 2rem;
+}
+
+#side-menu{
+    height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: lightgray;
+	opacity: 0.8;
+	overflow-x: hidden;
+	padding-top: 6rem;
+	transition: 0.5s;
+}	
+	
+a.btn-close{
+	font-size: 3rem;
+	position: absolute;
+	top: 0;
+	right: 2.8rem;
+	margin-left: 5rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: royalblue;
+	list-style-type: none;
+}	
+
+a.teleporter{
+	display: block;
+	list-style-type: none;
+	width: 100%;
+	color: royalblue;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 400%;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'advent_proregular';
+}
+
+a.teleporter:hover{
+	color: crimson;
+}
+
+a.teleporter:active{
+	color: darkgray;
+}
+
+#portrait{
+	width: 12.5rem;
+	height: auto;
+    display: block;
+	padding: 7.5rem 0 0 17.5rem;
+}
+
+#bio{
+	display: block;
+    text-indent: 4rem;
+    padding-top: 5rem;
+    line-height: 200%;
+    padding-bottom: 30rem;
+	font-family: 'bellefairregular';
+	color: darkgray;
+	font-size: 1.75rem;
+	width: 60%;
+	padding-left: 30rem;
+} 
+
+#toenail{
+	color: royalblue;
+	font-size: 1.75rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'advent_proregular';
+	font-weight: bold;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+
+     

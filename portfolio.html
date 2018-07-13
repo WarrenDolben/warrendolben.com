@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Warren Dolben">
+      <meta name="description" content="Warren's portfolio of web development projects.">
+      <link rel="shortcut icon" href="favicon.ico" type="icon">
+      <link rel="stylesheet" href="portfoliostyle.css">
+	  <script src="main.js"></script>
+  </head>
+<body>
+    
+    <header>
+   
+  <h1>Portfolio</h1>
+  
+<div class="social">
+<a href="https://www.facebook.com/warrendolben/" class="facebook">f</a>
+<a href="https://www.twitter.com/dolben/" class="twitter">t</a>
+<a href="https://www.instagram.com/warrendolben/" class="instagram">insta</a>
+<a href="https://www.linkedin.com/in/warrendolben/" class="linkedin">in</a>
+</div>
+
+ <nav>
+   <span>
+     <a href="#" onclick="openSlideMenu()">
+	   <svg width="30" height="30">
+	     <path d="M0,5 30,5" stroke="#900"
+		 stroke-width="5"/>
+		 <path d="M0,14 30,14" stroke="#900"
+		 stroke-width="5"/>
+		 <path d="M0,23 30,23" stroke="#900"
+		 stroke-width="5"/>
+	   </svg>
+	  </a>
+	</span>
+ <div class="topnav">
+  <a href="index.html" class="topnav" title="Home"><img id="home-icon" src="home-page.png" alt="A small blue house"></img></a>
+  <a href="aboutme.html" class="topnav" title="About Me">About Me</a>
+  <a href="rates.html" class="topnav" title="Rates">Rates</a>
+  <a href="portfolio.html" class="topnav" title="Portfolio">Portfolio</a>
+  <a href="photogallery.html" class="topnav" title="Photo Gallery">Photo Gallery</a>
+  <a href="blog.html" id="rightside" class="topnav" title="Blog">Blog</a>
+</div>
+</nav>
+
+<div id="side-menu" class="side-nav">
+  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+  <a href="index.html" class="teleporter" title="Home">Home</a>
+  <a href="aboutme.html" class="teleporter" title="About Me">About Me</a>
+  <a href="rates.html" class="teleporter" title="Rates">Rates</a>
+  <a href="photogallery.html" class="teleporter" title="Photo Gallery">Photo Gallery</a>
+  <a href="blog.html" class="teleporter" title="Blog">Blog</a>
+</div>
+
+     </header>
+    
+<main id="main">
+  <figure>
+    <img src="johntarrpainting.png"
+         alt="A screenshot of a landing page for a painting company; styled in red, white, and dark gray."
+		 height="250px" width="50%">
+    <figcaption>A <a class="johntarr" title="full screen" target="_blank" href="johntarrpainting.png">landing page</a> I created for John Tarr Painting.</figcaption>
+  </figure>	
+</main>
+  <footer>
+    <p id="toenail">Warren Dolben - Old Orchard Beach, ME - Front-End Web Developer - warrendolben@gmail.com - (603) 502-5103</p>
+  </footer>
+</body>
+</html>  
+  
