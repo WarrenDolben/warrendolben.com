@@ -102,74 +102,37 @@ h1{
 #social{
 	padding-left: 5rem;
   margin-top: 15rem;
+  display: inline-flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.social {
+  padding: 1rem;
 }
 
 .social:hover {
   text-decoration: none;
 }
 
-.facebook{
-	padding: 1.25rem 2rem 1.25rem 2rem;
-	font-size: 3rem;
-	width: 5rem;
-	text-align: center;
-	text-decoration: none;
-	background: #3B5998;
-	color: white;
-	border-radius: 50%;
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: bold;
-}
-
 .facebook:hover{
 	opacity: 0.7;
-}
-
-.twitter{
-	padding: 1.25rem 2rem 1.25rem 2rem;
-	text-align: center;
-	text-decoration: none;
-	background: #00aced;
-	color: white;
-	font-weight: bold;
-	border-radius: 50%;
-	font-size: 3rem;
-	font-family: Helvetica;
 }
 
 .twitter:hover{
 	opacity: 0.7;
 }
 
-.instagram{
-	padding: 2.5rem 1.25rem .4rem 1.25rem;
-	text-align: center;
-	text-decoration: none;
-	font-size: 2rem;
-	background: #FF69B4;
-	color: white;
-	border-radius: 50%;
-	font-family: 'billabongregular', Serif;
-}
-
 .instagram:hover{
 	opacity: 0.7;
 }
 
-.linkedin{
-	padding: 1.75rem 1.4rem 1.25rem 1.4rem;
-	font-size: 2.5rem;
-	text-align: center;
-	text-decoration: none;
-	background: #0077B5;
-	color: white;
-	font-weight: bold;
-	border-radius: 50%;
-	font-family: 'Myriad_Pro', sans-serif;
-}
-
 .linkedin:hover{
 	opacity: 0.7;
+}
+
+.github:hover {
+  opacity: 0.7;
 }
 
 #topnav{
