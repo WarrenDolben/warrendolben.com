@@ -1,0 +1,430 @@
+﻿
+/*Integrates fonts via webfont format*/
+@font-face {
+
+  font-family: 'advent_proregular';
+
+  src: url('fonts/adventpro-regular-webfont.eot');
+
+  src: url('fonts/adventpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+
+  url('fonts/adventpro-regular-webfont.woff2') format('woff2'),
+
+  url('fonts/adventpro-regular-webfont.woff') format('woff'),
+
+  url('fonts/adventpro-regular-webfont.ttf') format('truetype'),
+
+  url('fonts/adventpro-regular-webfont.svg#advent_proregular') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'bellefairregular';
+    src: url('fonts/bellefair-regular-webfont.woff2') format('woff2'),
+         url('fonts/bellefair-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+font-family: 'billabongregular';
+
+src: url('fonts/billabong-webfont.woff2') format('woff2'),
+	 url('fonts/billabong-webfont.woff') format('woff');
+
+font-weight: normal;
+
+font-style: normal;
+
+
+}
+
+/*Applies fonts*/
+
+h1, h2, h3, nav, #toenail, .side-nav, #side-menu, .topnav-link{
+	font-family: 'advent_proregular', sans serif;
+}
+
+p, dt, dd, .closerlook{
+	font-family: 'bellefairregular', serif;
+}
+
+/*Standardizes font-size, and sets box sizing for more space/consistency*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*responsive images*/
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html{
+	font-size: 10px;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+h1{
+  display: block;
+  padding: 3rem 0 3rem 0;
+  color: royalblue;
+  border-top: .3rem solid crimson;
+  border-bottom: .3rem solid crimson;
+  text-shadow: .2rem .2rem .2rem black;
+	font-size: 4.8rem;
+	background: linear-gradient(to right, darkgray, white);
+	box-shadow: .3rem .3rem .3rem .3rem crimson;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: auto;
+  margin-bottom: 5rem;
+	text-align: center;
+	letter-spacing: 1.1rem;
+	font-style: italic;
+}
+
+#social{
+	padding-left: 5rem;
+  margin-top: 15rem;
+}
+
+.social:hover {
+  text-decoration: none;
+}
+
+.facebook{
+	padding: 1.25rem 2rem 1.25rem 2rem;
+	font-size: 3rem;
+	width: 5rem;
+	text-align: center;
+	text-decoration: none;
+	background: #3B5998;
+	color: white;
+	border-radius: 50%;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bold;
+}
+
+.facebook:hover{
+	opacity: 0.7;
+}
+
+.twitter{
+	padding: 1.25rem 2rem 1.25rem 2rem;
+	text-align: center;
+	text-decoration: none;
+	background: #00aced;
+	color: white;
+	font-weight: bold;
+	border-radius: 50%;
+	font-size: 3rem;
+	font-family: Helvetica;
+}
+
+.twitter:hover{
+	opacity: 0.7;
+}
+
+.instagram{
+	padding: 2.5rem 1.25rem .4rem 1.25rem;
+	text-align: center;
+	text-decoration: none;
+	font-size: 2rem;
+	background: #FF69B4;
+	color: white;
+	border-radius: 50%;
+	font-family: 'billabongregular', Serif;
+}
+
+.instagram:hover{
+	opacity: 0.7;
+}
+
+.linkedin{
+	padding: 1.75rem 1.4rem 1.25rem 1.4rem;
+	font-size: 2.5rem;
+	text-align: center;
+	text-decoration: none;
+	background: #0077B5;
+	color: white;
+	font-weight: bold;
+	border-radius: 50%;
+	font-family: 'Myriad_Pro', sans-serif;
+}
+
+.linkedin:hover{
+	opacity: 0.7;
+}
+
+#topnav{
+  border-top: .2rem solid crimson;
+  border-bottom: .2rem solid crimson;
+	background: lightgray;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: auto;
+}
+
+.topnav-link {
+  width: auto;
+  text-align: center;
+  height: 50%;
+  text-decoration: none;
+  color: royalblue;
+  letter-spacing: .3rem;
+  font-size: 2rem;
+  line-height: 200%;
+  border-right: .2rem solid crimson;
+  padding: 1rem 2rem;
+}
+.topnav-link:visited{
+	color: royalblue;
+	text-decoration: none;
+}
+
+.topnav-link:hover{
+	color: crimson;
+  text-decoration: none;
+}
+
+.topnav-link:active{
+	color: darkgray;
+  text-decoration: none;
+}
+
+#rightside{
+	border-right: hidden;
+}
+
+.teleporter{
+	display: block;
+	list-style-type: none;
+	width: 100%;
+	color: royalblue;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 400%;
+	text-decoration: none;
+	text-align: center;
+}
+
+.teleporter:hover{
+	color: crimson;
+  text-decoration: none;
+}
+
+.teleporter:active{
+	color: darkgray;
+}
+
+#portrait {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+}
+
+
+#container {
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 75vw;
+  border: .1rem solid crimson;
+  padding: 2rem;
+}
+
+#main {
+  display: block;
+  margin: auto;
+  width: 75vw;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+#text {
+  font-size: 1.75rem;
+  color: darkgray;
+  line-height: 200%;
+  padding: 2rem;
+  text-align: start;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.caption {
+  color: darkgray;
+  padding: 2.5rem;
+}
+
+#main-image {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: .1rem solid crimson;
+  height: 50rem;
+  width: 50rem;
+}
+
+ul {
+  color: lightgray;
+}
+
+h2{
+	padding-top: 7.5rem;
+}
+
+h2, h3{
+  color: royalblue;
+	font-size: 3rem;
+	text-align: center;
+}
+
+dt{
+  padding-bottom: .5rem;
+  font-weight: bold;
+  color: crimson;
+	font-size: 2rem;
+	text-align: center;
+}
+
+dd{
+  padding-bottom: 1.5rem;
+	font-size: 1.75rem;
+}
+
+#job{
+  font-style: italic;
+  color: crimson;
+	font-size: 1.75rem;
+	padding: 15rem 0 5rem 0;
+	text-align: center;
+}
+
+#closerlook {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.closerlook {
+	font-size: 1.75rem;
+	line-height: 300%;
+	text-decoration: none;
+	list-style-type: none;
+  color: darkgray;
+}
+
+.closerlook:visited{
+	color: royalblue;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.closer-link:hover {
+  text-decoration: none;
+}
+
+dd, section{
+	color: darkgray;
+	text-align: center;
+}
+
+dl{
+	padding-bottom: 4rem;
+}
+
+#toenail{
+	color: royalblue;
+	font-size: 2rem;
+	font-weight: bold;
+  text-align: center;
+  position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 2rem;
+	margin: 0 auto;
+}
+
+#side-menu{
+  height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: lightgray;
+	opacity: 0.8;
+	overflow-x: hidden;
+	padding-top: 6rem;
+	transition: 0.5s;
+}
+
+#btn-close{
+	font-size: 3rem;
+	position: absolute;
+	top: 0;
+	right: 2.8rem;
+	margin-left: 5rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: royalblue;
+	list-style-type: none;
+}
+
+
+@media screen and (max-width: 60rem){
+h1 {
+  font-size: 2rem;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+#topnav{
+		visibility: hidden;
+	}
+
+  #toenail {
+    font-size: 1.5rem;
+  }
+
+  #container {
+    width: 100vw;
+    display: block;
+    margin: auto;
+    margin-left: 7.5rem;
+    margin-bottom: 10rem;
+  }
+
+  #main {
+    width: 100vw;
+    display: block;
+    margin: auto;
+    margin-left: 6rem;
+    margin-bottom: 10rem;
+  }
+}
