@@ -32,31 +32,17 @@
 
 }
 
-@font-face {
-
-font-family: 'billabongregular';
-
-src: url('fonts/billabong-webfont.woff2') format('woff2'),
-	 url('fonts/billabong-webfont.woff') format('woff');
-
-font-weight: normal;
-
-font-style: normal;
-
-
-}
-
 /*Applies fonts*/
 
-h1, h2, h3, nav, #toenail, .side-nav, #side-menu, .topnav-link{
-	font-family: 'advent_proregular', sans serif;
+h1, h2, h3, nav, #toenail, #side-menu, #top-nav, .comments{
+	font-family: 'advent_proregular', sans-serif;
 }
 
-p, dt, dd, .closerlook{
+p, dt, dd, .closerlook__item{
 	font-family: 'bellefairregular', serif;
 }
 
-/*Standardizes font-size, and sets box sizing for more space/consistency*/
+/*gets rid of browser defaults*/
 
 * {
   margin: 0;
@@ -76,20 +62,30 @@ html{
 }
 
 body{
-	overflow-x: hidden;
+  background: #505050;
 }
+
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
 
 h1{
   display: block;
   padding: 3rem 0 3rem 0;
-  color: royalblue;
+  color: #08F;
   border-top: .3rem solid crimson;
   border-bottom: .3rem solid crimson;
   text-shadow: .2rem .2rem .2rem black;
 	font-size: 4.8rem;
-	background: linear-gradient(to right, darkgray, white);
+	background: #222;
 	box-shadow: .3rem .3rem .3rem .3rem crimson;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
 	margin: auto;
@@ -97,86 +93,93 @@ h1{
 	text-align: center;
 	letter-spacing: 1.1rem;
 	font-style: italic;
+  z-index: 2;
 }
 
-#social{
-	padding-left: 5rem;
+#social {
+  display: block;
+  width: 100%;
   margin-top: 15rem;
-  display: inline-flex;
-  justify-content: baseline;
-  align-items: center;
+  margin-left: 5rem;
+  margin-bottom: 2.5rem;
+  z-index: 1;
 }
 
-.social {
+.social__link {
   padding: 1rem;
+  color: #08F;
 }
 
-.social:hover {
-  text-decoration: none;
+.social__link:hover {
+  opacity: 0.7
 }
 
-.facebook:hover{
-	opacity: 0.7;
-}
-
-.twitter:hover{
-	opacity: 0.7;
-}
-
-.instagram:hover{
-	opacity: 0.7;
-}
-
-.linkedin:hover{
-	opacity: 0.7;
-}
-
-.github:hover {
-  opacity: 0.7;
-}
-
-#topnav{
+#top-nav{
   border-top: .2rem solid crimson;
   border-bottom: .2rem solid crimson;
-	background: lightgray;
+	background: #222;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: auto;
   width: auto;
 }
 
-.topnav-link {
-  width: auto;
-  text-align: center;
-  height: 50%;
+.top-nav__link {
+  margin: auto;
   text-decoration: none;
-  color: royalblue;
+  color: #08F;
   letter-spacing: .3rem;
   font-size: 2rem;
   line-height: 200%;
   border-right: .2rem solid crimson;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem 1rem 0;
 }
-.topnav-link:visited{
-	color: royalblue;
+.top-nav__link:visited{
+	color: #08F;
 	text-decoration: none;
 }
 
-.topnav-link:hover{
+.top-nav__link:hover{
 	color: crimson;
   text-decoration: none;
 }
 
-.topnav-link:active{
-	color: darkgray;
+.top-nav__link:active{
+	color: #dee0e3;
   text-decoration: none;
 }
 
-#rightside{
-	border-right: hidden;
+.top-nav__link:last-of-type {
+  border-right: hidden;
 }
 
-.teleporter{
+#side-menu{
+  height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	background: #222;
+	opacity: 0.8;
+	overflow-x: hidden;
+	padding-top: 6rem;
+	transition: 0.5s;
+}
+
+#side-menu__close{
+	font-size: 4rem;
+	position: absolute;
+	top: 0;
+	right: 2.8rem;
+	margin-left: 5rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: #08F;
+	list-style-type: none;
+}
+
+.side-menu__link{
 	display: block;
 	list-style-type: none;
 	width: 100%;
@@ -188,13 +191,13 @@ h1{
 	text-align: center;
 }
 
-.teleporter:hover{
+.side-menu__link:hover{
 	color: crimson;
   text-decoration: none;
 }
 
-.teleporter:active{
-	color: darkgray;
+.side-menu__link:active{
+	color: #dee0e3;
 }
 
 #portrait {
@@ -203,28 +206,76 @@ h1{
   width: 20rem;
 }
 
-
-#container {
-  display: block;
-  margin: auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  width: 75vw;
-  border: .1rem solid crimson;
-  padding: 2rem;
-}
-
 #main {
   display: block;
   margin: auto;
-  width: 75vw;
+  width: 80vw;
   padding: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
+  border: .1rem solid crimson;
+  box-shadow: .2rem .2rem .2rem .2rem crimson;
+}
+
+#form__header {
+  font-size: 5rem;
+}
+
+#form-contact-method {
+  margin-bottom: 0;
+}
+
+.form__label {
+  color: #08F;
+  margin: auto;
+  padding: 5rem;
+}
+
+#submit {
+  color: #08F;
+  padding: 1rem 2rem;
+}
+
+#name, #email, #phone, #social, #email-address, #social-handle {
+  color: #dee0e3;
+  opacity: 0.8;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.paginator {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 50vw;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.paginator a {
+  border: .1rem solid crimson;
+  padding: .5rem 1rem;
+  margin: 1rem;
+}
+
+.paginator a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #dee0e3;
+}
+
+.paginator a:active{
+  color: #dee0e3;
+}
+
+.paginator__button {
+  color: #08F;
+
 }
 
 #text {
-  font-size: 1.75rem;
-  color: darkgray;
+  font-size: 2rem;
+  color: #dee0e3;
   line-height: 200%;
   padding: 2rem;
   text-align: start;
@@ -240,7 +291,7 @@ h1{
 }
 
 .caption {
-  color: darkgray;
+  color: #dee0e3;
   padding: 2.5rem;
 }
 
@@ -258,62 +309,60 @@ ul {
 }
 
 h2{
-	padding-top: 7.5rem;
-}
-
-h2, h3{
-  color: royalblue;
+  color: #08F;
 	font-size: 3rem;
 	text-align: center;
+}
+
+h3{
+  color: #08F;
+  text-align: center;
 }
 
 dt{
   padding-bottom: .5rem;
   font-weight: bold;
   color: crimson;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	text-align: center;
 }
 
 dd{
   padding-bottom: 1.5rem;
-	font-size: 1.75rem;
-}
-
-#job{
-  font-style: italic;
-  color: crimson;
-	font-size: 1.75rem;
-	padding: 15rem 0 5rem 0;
-	text-align: center;
+	font-size: 2rem;
 }
 
 #closerlook {
   display: block;
-  margin: auto;
+  margin:  auto;
   text-align: center;
 }
 
-.closerlook {
-	font-size: 1.75rem;
+.closerlook__item {
+	font-size: 2rem;
 	line-height: 300%;
 	text-decoration: none;
 	list-style-type: none;
-  color: darkgray;
+  color: #dee0e3;
 }
 
-.closerlook:visited{
-	color: royalblue;
+.closerlook__item-link {
+  color: #08F;
+}
+
+.closerlook__item-link:visited {
+	color: #08F;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.closer-link:hover {
+.closerlook__item-link:hover {
   text-decoration: none;
+  color: crimson;
 }
 
 dd, section{
-	color: darkgray;
+	color: #dee0e3;
 	text-align: center;
 }
 
@@ -321,73 +370,67 @@ dl{
 	padding-bottom: 4rem;
 }
 
+footer {
+  margin: auto;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  margin: 0;
+  background: #222;
+  padding: 2.5rem 0 5rem 0;
+  border-top: .1rem solid crimson;
+}
+
 #toenail{
-	color: royalblue;
+	color: #08F;
 	font-size: 2rem;
 	font-weight: bold;
   text-align: center;
-  position: fixed;
-	bottom: 0;
-	width: 100%;
-	padding-bottom: 2rem;
-	margin: 0 auto;
 }
 
-#side-menu{
-  height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: lightgray;
-	opacity: 0.8;
-	overflow-x: hidden;
-	padding-top: 6rem;
-	transition: 0.5s;
-}
+@media (max-width: 60rem){
 
-#btn-close{
-	font-size: 3rem;
-	position: absolute;
-	top: 0;
-	right: 2.8rem;
-	margin-left: 5rem;
-	font-weight: bold;
-	text-decoration: none;
-	color: royalblue;
-	list-style-type: none;
-}
-
-
-@media screen and (max-width: 60rem){
 h1 {
-  font-size: 2rem;
-  text-shadow: none;
-  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: .1rem .1rem .1rem black;
+  width: 100vw;
 }
 
-#topnav{
+#social {
+  margin-top: 20rem;
+  font-size: 75%;
+}
+
+#top-nav{
 		visibility: hidden;
 	}
 
   #toenail {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
   }
 
-  #container {
-    width: 100vw;
-    display: block;
-    margin: auto;
-    margin-left: 7.5rem;
-    margin-bottom: 10rem;
+  .paginator a{
+    float: left;
+    margin: .5rem 0 .5rem 0;
+    padding: .25rem .5rem;
+    border: .1rem solid crimson;
+    border-radius: 50%;
+  }
+
+  h2, dt {
+    font-size: 3rem;
+  }
+
+  #text, dd, .closerlook__item {
+    font-size: 1.75rem;
   }
 
   #main {
-    width: 100vw;
-    display: block;
-    margin: auto;
-    margin-left: 6rem;
     margin-bottom: 10rem;
+    width: 100vw;
   }
 }

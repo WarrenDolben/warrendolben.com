@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<html>
+<html lang="en-US" dir="ltr">
   <head>
-    <title>Portfolio</title>
+    <title>Contact</title>
       <meta charset="utf-8">
       <meta name="author" content="Warren Dolben">
-      <meta name="description" content="Warren's portfolio of web development projects.">
+      <meta name="description" content="A form to get into contact with me.">
       <meta name="keywords" content="tech, online, blog, web development, website, IT">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,11 +13,11 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
   </head>
-<body>
-<div class="wrapper">
-    <header>
+  <body>
+    <div class="wrapper">
+  <header>
 
-  <h1>Portfolio</h1>
+<h1>Contact</h1>
 
 <div id="social">
   <a href="https://www.facebook.com/warrendolben/" class="social__link"><i class="fab fa-facebook-f fa-3x"></i></a>
@@ -29,7 +28,7 @@
   <a href="https://www.codepen.io/Warren_Dolben" class="social__link"><i class="fab fa-codepen fa-3x"></i></a>
 </div>
 
- <nav>
+<nav>
    <span>
      <a id="hamburger" href="#">
 	   <svg width="30" height="30">
@@ -42,14 +41,14 @@
 	   </svg>
 	  </a>
 	</span>
- <div id="top-nav" class="side-nav">
+ <div id="top-nav">
   <a href="index.html" class="top-nav__link" title="Home"><i class="fas fa-home"></i></a>
   <a href="aboutme.html" class="top-nav__link" title="About Me">About Me</a>
   <a href="rates.html" class="top-nav__link" title="Rates">Rates</a>
   <a href="portfolio.html" class="top-nav__link" title="Portfolio">Portfolio</a>
   <a href="photogallery.html" class="top-nav__link" title="Photo Gallery">Photo Gallery</a>
   <a href="blog.html" class="top-nav__link" title="Blog">Blog</a>
-  <a href="contact.html" class="top-nav__link" title="Contact">Contact</a>
+  <a href="contact.html" class="top-nav__link">Contact</a>
 </div>
 </nav>
 
@@ -58,34 +57,59 @@
   <a href="index.html" class="side-menu__link" title="Home">Home</a>
   <a href="aboutme.html" class="side-menu__link" title="About Me">About Me</a>
   <a href="rates.html" class="side-menu__link" title="Rates">Rates</a>
+  <a href="portfolio.html" class="side-menu__link" title="Portfolio">Portfolio</a>
   <a href="photogallery.html" class="side-menu__link" title="Photo Gallery">Photo Gallery</a>
   <a href="blog.html" class="side-menu__link" title="Blog">Blog</a>
-  <a href="contact.html" class="side-menu__link" title="Contact">Contact</a>
 </div>
 
-     </header>
+    </header>
 
-<main class="row" id="main">
+    <main class="row" id="main">
 
-  <section class="center-block">
+      <section id="container" class="center-block">
+        <form class="form" action="MAILTO:warrendolben@gmail.com" method="post" enctype="text/plain">
+          <h2 id="form__header">Contact</h2>
+          <p id="text">Hey, feel free to contact me here about potential projects, or collaboration ideas</p>
+          <label class="form__label" for="name">Name:
+            <input id="name" type="text" name="identity" value="your name">
+          </label>
+            <h3 id="form-contact-method">Preferred Method of Contact</h3>
+            <label class="form__label" for="cell">Cell:
+              <input id="cell" type="checkbox" name="contact">
+            </label>
+            <label class="form__label" for="email">Email:
+              <input id="email" type="checkbox" name="contact">
+            </label>
+            <label class="form__label" for="social-media">Social Media:
+              <input id="social-media" type="checkbox" name="contact">
+            </label>
+              <br>
+            <label class="form__label" for="phone">Phone #:
+                <input id="phone" type="text" name="phone" value="your phone number">
+            </label>
+              <br>
+            <label class="form__label" for="email-address">Email Address:
+                <input id="email-address" type="text" name="email" value="email">
+            </label>
+            <br>
+            <label class="form__label" for="social-handle">Social Media Handle or Page URL:
+               <input id="social-handle" type="text" name="social" value="your social">
+            </label>
+            <h3>What would you like to discuss?</h3>
+            <textarea name="discussion topic" rows="8" cols="30"></textarea>
 
-  <h2>Projects</h2>
+                <input id="submit" type="submit" name="submit" value="Submit">
 
-    <img id="johntarr" src="./jtp.jpg" alt="A screenshot of a landing page for a painting company; styled in red, white, and dark gray.">
+            </form>
 
-    <img id="pizzamichael" src="./pizzabymichael.png" alt="A homepage for a pizza website designed by yours truly">
+      </section>
 
-    <img id="nickliatsko" src="./nickliatsko.png" alt="A homepage for a personal/professional website I made for a friend.">
-
-  <h2>Certificates</h2>
-  <img src="./coursera.png" alt="My certificate from Coursera for the technical support fundamentals course.">
-</section>
-</main>
-<footer>
-  <p id="toenail">Warren Dolben - Front-End Web Developer - warrendolben@gmail.com - (603) 502-5103</p>
-</footer>
-</div>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="main.js"></script>
+    </main>
+    <footer>
+      <p id="toenail">Warren Dolben - Front-End Web Developer - warrendolben@gmail.com - (603) 502-5103</p>
+    </footer>
+  </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
 </html>
