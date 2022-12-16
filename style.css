@@ -299,6 +299,15 @@ h1{
   padding: 2.5rem;
 }
 
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+#name:focus, #phone:focus, #email-address:focus, #social-handle:focus, textarea:focus {
+  color: black;
+}
+
 #main-image {
   display: flex;
   justify-content: center;
@@ -411,10 +420,16 @@ h1 {
 		visibility: hidden;
 	}
 
-  #toenail {
-    font-size: 1.75rem;
-    padding-bottom: 1rem;
+  #footer {
     margin-bottom: 0;
+    display: block;
+    padding-bottom: 7.5rem;
+  }
+
+  #toenail {
+    padding-top: 0;
+    font-size: 1.75rem;
+    padding-bottom: 10rem;
   }
 
   .paginator a{
