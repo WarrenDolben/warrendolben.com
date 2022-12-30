@@ -65,6 +65,8 @@ body{
   background: #505050;
 }
 
+/*fixes overflow problem*/
+
 .wrapper {
   overflow-x: hidden;
   position: relative;
@@ -75,25 +77,10 @@ a:hover{
 }
 
 
-h1{
-  display: block;
-  padding: 3rem 0 3rem 0;
-  color: #08F;
-  border-top: .3rem solid crimson;
-  border-bottom: .3rem solid crimson;
-  text-shadow: .2rem .2rem .2rem black;
-	font-size: 4.8rem;
-	background: #222;
-	box-shadow: .3rem .3rem .3rem .3rem crimson;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	margin: auto;
-  margin-bottom: 5rem;
-	text-align: center;
-	letter-spacing: 1.1rem;
-	font-style: italic;
-  z-index: 2;
+#logo {
+  width: 100%;
+  height: 50rem;
+  border-bottom: .1rem solid crimson;
 }
 
 #social {
@@ -122,10 +109,9 @@ h1{
   border-top: .2rem solid crimson;
   border-bottom: .2rem solid crimson;
 	background: #222;
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  width: auto;
+  display: inline-flex;
+  align-items: center;
+  width: 100vw;
 }
 
 .top-nav__link {
@@ -135,7 +121,6 @@ h1{
   letter-spacing: .3rem;
   font-size: 2rem;
   line-height: 200%;
-  border-right: .2rem solid crimson;
   padding: 1rem 3rem 1rem 0;
 }
 .top-nav__link:visited{
@@ -220,6 +205,17 @@ h1{
   box-shadow: .2rem .2rem .2rem .2rem crimson;
 }
 
+#hit-counter{
+  display: block;
+  width: 30rem;
+  height: 10%;
+  color: #dee0e3;
+  margin: auto;
+  text-align: center;
+  border: .1rem solid crimson;
+  padding: 1rem 1.5rem;
+}
+
 #form__header {
   font-size: 5rem;
 }
@@ -300,9 +296,9 @@ h1{
 }
 
 
-input:focus::placeholder {
+/* input:focus::placeholder {
   color: transparent;
-}
+} */
 
 #name:focus, #phone:focus, #email-address:focus, #social-handle:focus, textarea:focus {
   color: black;
