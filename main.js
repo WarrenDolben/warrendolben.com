@@ -59,4 +59,23 @@ $(document).ready(function() {
 		$('#post-time').html('2/5/21');
 		$('#post-time').attr('datetime', '2021-02-05 17:00');
 	});
+
+	//Blank Contact Form Inputs on click
+
+	$('#name').on('click', function() {
+	  $('#name').val('');
+	});
+
+	$('#phone').on('click', function() {
+		$('#phone').val('');
+	});
+
+	$('#email-address').on('click', function() {
+		$('#email-address').val('');
+	});
+
+	$('#social-handle').on('click', function() {
+		$('#social-handle').val('');
+	});
+
 });

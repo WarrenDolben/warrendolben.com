@@ -235,7 +235,7 @@ a:hover{
   padding: 1rem 2rem;
 }
 
-#name, #email, #phone, #social, #email-address, #social-handle {
+#name, #phone, #social, #email-address, #social-handle {
   color: #dee0e3;
   opacity: 0.8;
   font-style: italic;
@@ -281,6 +281,14 @@ a:hover{
   text-align: start;
 }
 
+#contact-text {
+  font-size: 2rem;
+  color: #dee0e3;
+  line-height: 200%;
+  padding: 2rem;
+  text-align: center;
+}
+
 .portfolio {
   display: flex;
   justify-content: center;
@@ -294,11 +302,6 @@ a:hover{
   color: #dee0e3;
   padding: 2.5rem;
 }
-
-
-/* input:focus::placeholder {
-  color: transparent;
-} */
 
 #name:focus, #phone:focus, #email-address:focus, #social-handle:focus, textarea:focus {
   color: black;
