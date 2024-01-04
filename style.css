@@ -34,7 +34,7 @@
 
 /*Applies fonts*/
 
-h1, h2, h3, nav, #toenail, #side-menu, #top-nav, .comments{
+h1, h2, h3, nav, #toenail, #side-menu, #top-nav, .comments, .hours{
 	font-family: 'advent_proregular', sans-serif;
 }
 
@@ -406,6 +406,7 @@ footer {
   color: #08F;
   font-size: 2rem;
   text-align: center;
+  font-weight: bold;
 }
 
 @media (max-width: 60rem){
@@ -434,6 +435,10 @@ h1 {
   #toenail {
     padding-top: 0;
     font-size: 1.75rem;
+  }
+
+  .hours {
+    font-size: 1.5rem;
   }
 
   .paginator a{
