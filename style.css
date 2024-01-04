@@ -428,12 +428,12 @@ h1 {
   #footer {
     margin-bottom: 0;
     display: block;
+    height: 10%;
   }
 
   #toenail {
     padding-top: 0;
     font-size: 1.75rem;
-    padding-bottom: 10rem;
   }
 
   .paginator a{
