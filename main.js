@@ -64,19 +64,38 @@ $(document).ready(function() {
 	//Blank Contact Form Inputs on click
 
 	$('#name').on('click', function() {
-	  $('#name').val('');
+	  $('#name').val(' ');
 	});
 
-	$('#phone').on('click', function() {
-		$('#phone').val('');
+	$('#cell').on('click', function() {
+		$('#cell').val(' ');
 	});
 
-	$('#email-address').on('click', function() {
-		$('#email-address').val('');
+	$('#email').on('click', function() {
+		$('#email').val(' ');
 	});
 
 	$('#social-handle').on('click', function() {
-		$('#social-handle').val('');
+		$('#social-handle').val(' ');
+	});
+
+	$('#textblock').on('click', function(){
+		$('#textblock').val(' ');
+	});
+
+	//Restore placeholder text on focusout
+
+	$('.form-control').on('focusout', function(){
+		$('#name').val('name');
+		$('#name').css('color', 'black');
+		$('#cell').val('cell');
+		$('#cell').css('color', 'black');
+		$('#email').val('email');
+		$('#email').css('color', 'black');
+		$('#social-handle').val('social');
+		$('#social-handle').css('color', 'black');
+		$('#textblock').val('Start typing here');
+		$('#textblock').css('color', 'black');
 	});
 
 });
