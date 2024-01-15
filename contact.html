@@ -59,39 +59,33 @@
     <main class="row" id="main">
 
       <section id="container" class="center-block">
-        <form class="form" action="MAILTO:warrendolben@gmail.com" method="post" enctype="text/plain">
-            <h2 id="form__header">Contact</h2>
-            <p id="contact-text">Hey, feel free to contact me here about potential projects, or collaboration ideas</p>
-            <label class="form__label" for="name">Name:
-            <input id="name" type="text" name="identity" value="your name">
-            </label>
-            <h3 id="form-contact-method">Preferred Method of Contact</h3>
-            <label class="form__label" for="cell">Cell:
-              <input id="cell" type="radio" name="contact">
-            </label>
-            <label class="form__label" for="email">Email:
-              <input id="email" type="radio" name="contact">
-            </label>
-            <label class="form__label" for="social-media">Social Media:
-              <input id="social-media" type="radio" name="contact">
-            </label>
-              <br>
-            <label class="form__label" for="phone">Phone #:
-                <input id="phone" type="text" name="phone" value="your phone number">
-            </label>
-              <br>
-            <label class="form__label" for="email-address">Email Address:
-                <input id="email-address" type="text" name="email" value="your email">
-            </label>
-            <br>
-            <label class="form__label" for="social-handle">Social Media Handle or Page URL:
-               <input id="social-handle" type="text" name="social" value="your social">
-            </label>
-            <h3>What would you like to discuss?</h3>
-            <textarea name="discussion topic" rows="8" cols="30"></textarea>
-
-                <input id="submit" type="submit" name="submit" value="Submit">
-
+        <h1 class="form__header">Contact</h1>
+        <p id="contact-text">Hey there, feel free to contact me here about potential collaboration opportunities, give me some constructive criticism, or propose a job.
+        <form action="MAILTO:warrendolben@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label class="form__label" for="name">Name</label>
+            <input class="form-control" type="name" id="name" placeholder="name" required>
+          </div>
+          <div class="form-group">
+          <label class="form__label" for="preferredContact">Preferred contact(click)</label>
+          <select id="select" class="form-control text-danger">
+            <option>Cell</option>
+            <option>Email</option>
+            <option>Social Media</option>
+          </select>
+          <h2>Provide at least one of the following...</h2>
+          <label class="form__label" for="cell">Cell</label>
+          <input class="form-control" id="cell" placeholder="cell">
+          <label class="form__label" for="email">Email</label>
+          <input class="form-control" id="email" placeholder="email">
+          <label class="form__label" for="social-handle">Social</label>
+          <input class="form-control" id="social-handle" placeholder="social">
+        </div>
+        <div class="form-group">
+          <label class="form__label" for="messageText">Leave me a brief message...</label>
+          <textarea id="textblock" class="form-control" placeholder="Start typing here..." id="messageText"></textarea>
+        </div>
+        <input id="submit" type="submit" name="submit" value="Submit">
         </form>
 
       </section>
