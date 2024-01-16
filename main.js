@@ -1,6 +1,7 @@
-//hamburger menu
-
 $(document).ready(function() {
+	
+	//hamburger menu
+
 	$('#hamburger').on('click', function() {
 		$('#side-menu').css({width: '250px'});
 	});
@@ -81,21 +82,6 @@ $(document).ready(function() {
 
 	$('#textblock').on('click', function(){
 		$('#textblock').val(' ');
-	});
-
-	//Restore placeholder text on focusout
-
-	$('.form-control').on('focusout', function(){
-		$('#name').val('name');
-		$('#name').css('color', 'black');
-		$('#cell').val('cell');
-		$('#cell').css('color', 'black');
-		$('#email').val('email');
-		$('#email').css('color', 'black');
-		$('#social-handle').val('social');
-		$('#social-handle').css('color', 'black');
-		$('#textblock').val('Start typing here');
-		$('#textblock').css('color', 'black');
 	});
 
 });
