@@ -459,12 +459,8 @@ h1 {
     height: 15%;
   }
 
-  #toenail {
+  #toenail, .hours, .copyright {
     padding-top: 0;
-    font-size: 1.75rem;
-  }
-
-  .hours {
     font-size: 1.75rem;
   }
 
