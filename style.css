@@ -484,11 +484,15 @@ h1 {
   }
 
   #main-image {
-    height: 40rem;
-    width: 40rem;
+    height: 30rem;
+    width: 30rem;
   }
 
   .form__label {
     font-size: 1.25rem;
+  }
+
+  .copyright {
+    font-size: 1.3rem;
   }
 }
