@@ -491,6 +491,16 @@ h1 {
   .form__label {
     font-size: 1.25rem;
   }
+  
+  #name, #cell, #email, #social-handle {
+    width: 30vw;
+  }
+  
+  #textblock {
+    margin: auto;
+    width: 20rem;
+    height: 30rem;
+  }
 
   .copyright {
     font-size: 1.3rem;
