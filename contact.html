@@ -39,7 +39,7 @@
   <a href="portfolio.html" class="top-nav__link" title="Portfolio">Portfolio</a>
   <a href="blog.html" class="top-nav__link" title="Blog">Blog</a>
   <a href="photogallery.html" class="top-nav__link" title="Photo Gallery">Photo Gallery</a>
-  <a href="contact.html" class="top-nav__link">Contact</a>
+  <a href="contact.php" class="top-nav__link">Contact</a>
   <a href="rates.html" class="top-nav__link" title="Rates">Rates</a>
 </div>
 </nav>
@@ -61,31 +61,22 @@
       <section id="container" class="center-block">
         <h1 class="form__header">Contact</h1>
         <p id="contact-text">Hey there, feel free to contact me here about potential collaboration opportunities, give me some constructive criticism, or propose a job.
-        <form action="MAILTO:warrendolben@gmail.com" method="post" enctype="text/plain">
+        <form action="file://C:/xampp/htdocs/send_email.php" method="post">
           <div class="form-group">
             <label class="form__label" for="name">Name</label>
-            <input class="form-control" type="name" id="name" placeholder="name" required>
+            <input class="form-control" type="name" id="name" placeholder="name" name="name" required>
           </div>
           <div class="form-group">
-          <label class="form__label" for="preferredContact">Preferred contact(click)</label>
-          <select id="select" class="form-control text-danger">
-            <option>Cell</option>
-            <option>Email</option>
-            <option>Social Media</option>
-          </select>
-          <h2>Provide at least one of the following...</h2>
           <label class="form__label" for="cell">Cell</label>
-          <input class="form-control" id="cell" placeholder="cell# (xxx-xxx-xxxx)">
+          <input class="form-control" id="cell" name="cell" placeholder="(xxx) xxx-xxxx" required>
           <label class="form__label" for="email">Email</label>
-          <input class="form-control" id="email" placeholder="email">
-          <label class="form__label" for="social-handle">Social</label>
-          <input class="form-control" id="social-handle" placeholder="social">
-        </div>
-        <div class="form-group">
-          <label class="form__label" for="messageText">Leave me a brief message...</label>
-          <textarea id="textblock" class="form-control" placeholder="Start typing here..." id="messageText"></textarea>
-        </div>
-        <input id="submit" type="submit" name="submit" value="Submit">
+          <input class="form-control" id="email" name="email" placeholder="email" type="email" required>
+          </div>
+          <div class="form-group">
+          <label class="form__label" for="message">Leave me a brief message...</label>
+          <textarea id="message" class="form-control" name="message" placeholder="Start typing here..." id="messageText" required></textarea>
+          </div>
+          <input id="submit" type="submit" name="submit" value="Submit">
         </form>
 
       </section>
@@ -94,7 +85,7 @@
     <footer id="footer">
       <p id="toenail">Warren Dolben - Front-End Web Developer - warrendolben@gmail.com - (603) 502-5103</p>
       <p class="hours">Hours -- Mon-Fri: 10am-3pm EST</p>
-      <p class="copyright">&copy; 2017-2024 Warren Dolben Web Development. All rights reserved.</p>
+      <p class="copyright">&copy; 2018-2024 Warren Dolben Web Development. All rights reserved.</p>
     </footer>
   </div>
     </body>

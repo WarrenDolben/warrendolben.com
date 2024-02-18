@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<html>
+<html lang="en-US" dir="ltr">
   <head>
-    <title>Portfolio</title>
+    <title>Contact</title>
       <meta charset="utf-8">
       <meta name="author" content="Warren Dolben">
-      <meta name="description" content="Warren's portfolio of web development projects.">
+      <meta name="description" content="A form to get into contact with me.">
       <meta name="keywords" content="online, blog, web development, web developer, website, internet, learning, writing, blogging, programming">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,11 +13,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="style.css">
   </head>
-<body>
-<div class="wrapper">
-    <header>
+  <body>
+    <div class="wrapper">
+  <header>
 
-  <img id="logo" src="WDWD.png" alt="logo for WDWD">
+<img id="logo" src="WDWD.png" alt="logo for WDWD">
 
 <div id="social">
   <a href="https://www.facebook.com/warrendolben/" class="social__link"><i class="fab fa-facebook-f fa-3x"></i></a>
@@ -30,17 +29,17 @@
   <a href="https://www.upwork.com/freelancers/~01132e874c96ef661a?s=1110580755057594368" class="social__link"><i class="fab fa-upwork fa-3x"></i></a>
 </div>
 
- <nav>
-   <button id="hamburger" data-mdb-toggle="sidenav" data-mdb-target="#hamburger" class="btn btn-dark" aria-controls="#sidenav-1" aria-haspopup="true">
-     <i class="fas fa-bars"></i>
-   </button>
- <div id="top-nav" class="side-nav">
+<nav>
+  <button id="hamburger" data-mdb-toggle="sidenav" data-mdb-target="#hamburger" class="btn btn-dark" aria-controls="#sidenav-1" aria-haspopup="true">
+    <i class="fas fa-bars"></i>
+  </button>
+ <div id="top-nav">
   <a href="index.html" class="top-nav__link" title="Home"><i class="fas fa-home"></i></a>
   <a href="aboutme.html" class="top-nav__link" title="About Me">About Me</a>
   <a href="portfolio.html" class="top-nav__link" title="Portfolio">Portfolio</a>
   <a href="blog.html" class="top-nav__link" title="Blog">Blog</a>
   <a href="photogallery.html" class="top-nav__link" title="Photo Gallery">Photo Gallery</a>
-  <a href="contact.php" class="top-nav__link" title="Contact">Contact</a>
+  <a href="contact.html" class="top-nav__link">Contact</a>
   <a href="rates.html" class="top-nav__link" title="Rates">Rates</a>
 </div>
 </nav>
@@ -49,43 +48,47 @@
   <a id="side-menu__close" href="#">&times;</a>
   <a href="index.html" class="side-menu__link" title="Home">Home</a>
   <a href="aboutme.html" class="side-menu__link" title="About Me">About Me</a>
+  <a href="portfolio.html" class="side-menu__link" title="Portfolio">Portfolio</a>
   <a href="blog.html" class="side-menu__link" title="Blog">Blog</a>
   <a href="photogallery.html" class="side-menu__link" title="Photo Gallery">Photo Gallery</a>
-  <a href="contact.php" class="side-menu__link" title="Contact">Contact</a>
   <a href="rates.html" class="side-menu__link" title="Rates">Rates</a>
 </div>
 
-     </header>
+    </header>
 
-<main class="row" id="main">
+    <main class="row" id="main">
 
-  <section class="center-block">
+    <section id="container" class="center-block">
+        <h1 class="form__header">Contact</h1>
+        <p id="contact-text">Hey there, feel free to contact me here about potential collaboration opportunities, give me some constructive criticism, or propose a job.
+        <form action="send_email.php" method="post">
+          <div class="form-group">
+            <label class="form__label" for="name">Name</label>
+            <input class="form-control" type="name" id="name" placeholder="name" name="name" required>
+          </div>
+          <div class="form-group">
+          <label class="form__label" for="cell">Cell</label>
+          <input class="form-control" id="cell" name="cell" placeholder="(xxx) xxx-xxxx" required>
+          <label class="form__label" for="email">Email</label>
+          <input class="form-control" id="email" name="email" placeholder="email" type="email" required>
+          </div>
+          <div class="form-group">
+          <label class="form__label" for="message">Leave me a brief message...</label>
+          <textarea id="message" class="form-control" name="message" placeholder="Start typing here..." id="messageText" required></textarea>
+          </div>
+          <input id="submit" type="submit" name="submit" value="Submit">
+        </form>
 
-  <h2>Projects</h2>
+      </section>
 
-    <img id="johntarr" src="./jtp.jpg" alt="A screenshot of a landing page for a painting company; styled in red, white, and dark gray.">
-
-    <img id="pizzamichael" src="./pizzabymichael.png" alt="A homepage for a pizza website designed by yours truly">
-
-    <img id="nickliatsko" src="./nickliatsko.png" alt="A homepage for a personal/professional website I made for a friend.">
-
-    <img id="davescott" src="./davescott.png" alt="A tribute page to Dave Scott">
-
-    <img id="clientsurvey" src="./satisfaction survey.png" alt="A survey to find out how I did">
-
-    <img id="contactform" src="./contact form.png" alt="A contact form using Boostrap and jQuery">
-
-  <h2>Certificates</h2>
-  <img src="./responsivewebdesign.png" alt="My certificate from freecodecamp for Responsive Web Design.">
-</section>
-</main>
-<footer id="footer">
-  <p id="toenail">Warren Dolben - Front-End Web Developer - warrendolben@gmail.com - (603) 502-5103</p>
-  <p class="hours">Hours -- Mon-Fri: 10am-3pm EST</p>
-  <p class="copyright">&copy; 2018-2024 Warren Dolben Web Development. All rights reserved.</p>
-</footer>
-</div>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="main.js"></script>
+    </main>
+    <footer id="footer">
+      <p id="toenail">Warren Dolben - Front-End Web Developer - warrendolben@gmail.com - (603) 502-5103</p>
+      <p class="hours">Hours -- Mon-Fri: 10am-3pm EST</p>
+      <p class="copyright">&copy; 2018-2024 Warren Dolben Web Development. All rights reserved.</p>
+    </footer>
+  </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
 </html>
