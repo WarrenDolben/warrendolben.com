@@ -417,6 +417,10 @@ dl{
 	padding-bottom: 4rem;
 }
 
+#text {
+  text-align: center;
+}
+
 footer {
   margin: auto;
   display: block;
@@ -460,7 +464,7 @@ h1 {
   #footer {
     margin-bottom: 0;
     display: block;
-    height: 20%;
+    height: 15%;
   }
 
   #toenail, .hours, .copyright {
