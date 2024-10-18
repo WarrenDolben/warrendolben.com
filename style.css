@@ -1,45 +1,15 @@
-﻿
-/*Integrates fonts via webfont format*/
-@font-face {
+﻿/*Applies fonts*/
 
-  font-family: 'advent_proregular';
-
-  src: url('fonts/adventpro-regular-webfont.eot');
-
-  src: url('fonts/adventpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-
-  url('fonts/adventpro-regular-webfont.woff2') format('woff2'),
-
-  url('fonts/adventpro-regular-webfont.woff') format('woff'),
-
-  url('fonts/adventpro-regular-webfont.ttf') format('truetype'),
-
-  url('fonts/adventpro-regular-webfont.svg#advent_proregular') format('svg');
-
-  font-weight: normal;
-
+h1, h2, h3, nav, #footer, #side-menu, #top-nav, .comments {
+	font-family: "Advent Pro", sans-serif;
+  font-weight: 400;
   font-style: normal;
-
-
-}
-
-@font-face {
-    font-family: 'bellefairregular';
-    src: url('fonts/bellefair-regular-webfont.woff2') format('woff2'),
-         url('fonts/bellefair-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/*Applies fonts*/
-
-h1, h2, h3, nav, #toenail, #side-menu, #top-nav, .comments, .hours, .copyright {
-	font-family: 'advent_proregular', sans-serif;
 }
 
 p, dt, dd, .closerlook__item{
-	font-family: 'bellefairregular', serif;
+	font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*gets rid of browser defaults*/
