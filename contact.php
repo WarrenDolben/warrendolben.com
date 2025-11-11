@@ -84,10 +84,10 @@
     </main>
     <footer id="footer">
       <p id="toenail">Warren Dolben - Front-End Web Developer - warrendolben@gmail.com - X: @dolben</p>
-      <p class="copyright">&copy; 2018-2024 Warren Dolben Web Development. All rights reserved.</p>
+      <p class="copyright">&copy; 2018-2025 Warren Dolben Web Development. All rights reserved.</p>
     </footer>
   </div>
-    </body>
+</body>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </html>
