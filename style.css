@@ -262,6 +262,7 @@ textarea {
   border: .1rem solid crimson;
   padding: .5rem 1rem;
   margin: 1rem;
+  text-decoration: none;
 }
 
 .paginator a:hover{
@@ -387,18 +388,23 @@ dl{
 	padding-bottom: 4rem;
 }
 
+#post-time {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
 #text {
   text-align: center;
 }
 
-footer {
+#footer {
   margin: auto;
   display: block;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 10%;
-  line-height: 100%;
+  height: 12%;
+  line-height: 150%;
   margin: 0;
   background: #222;
   padding: 2rem 0 2rem 0;
@@ -407,7 +413,7 @@ footer {
 
 .toenail {
   color: #08F;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
   width: 100%;
@@ -417,7 +423,7 @@ footer {
 
 .copyright {
   color: #08F;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
 }
@@ -458,7 +464,7 @@ h1 {
   }
 
   h2, dt {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #text, dd, .closerlook__item {
@@ -489,9 +495,25 @@ h1 {
     height: 30rem;
   }
 
-  .copyright {
-    font-size: 1rem;
+  #post-time {
+    font-size: 1.2rem;
+  }
+
+  #text {
+    font-size: 1.4rem;
     padding: 1rem;
+  }
+
+  #footer {
+    height: 11%;
+    line-height: 120%;
+  }
+
+  .toenail, .copyright {
+    font-size: 1.4rem;
+  }
+
+  .copyright {
     text-wrap: nowrap;
   }
 }
