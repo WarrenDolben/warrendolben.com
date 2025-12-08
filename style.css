@@ -448,6 +448,8 @@ h1 {
     margin-bottom: 0;
     display: block;
     height: 15%;
+    line-height: 125%;
+    font-size: 75%;
   }
 
   #toenail, .hours, .copyright {
@@ -502,11 +504,6 @@ h1 {
   #text {
     font-size: 1.4rem;
     padding: 1rem;
-  }
-
-  #footer {
-    height: 11%;
-    line-height: 120%;
   }
 
   .toenail, .copyright {
